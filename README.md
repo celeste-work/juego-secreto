@@ -17,7 +17,7 @@ El *Juego del Número Secreto* es un juego interactivo en el que el jugador tien
 
 ## ⚙️ Cómo jugar
 
-1. Elige un número entre 1 y 100. 🔢
+1. Elige un número entre 1 y 10. 🔢
 2. ¡Adivina y el sistema te dirá si el número es mayor o menor! 🤭
 3. Tienes un límite de intentos. 🕹️
 4. ¡Acertaste! 🎯 Si llegas al número secreto, ¡ganaste!
