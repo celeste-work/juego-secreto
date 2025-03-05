@@ -1,6 +1,3 @@
-¡Claro! Aquí tienes el README con algunos emoticonos, al estilo de ScreenMatch:
-
----
 
 # 🎮 **Juego del Número Secreto** 🤫
 
