@@ -7,13 +7,20 @@
 
 body {
     background: linear-gradient(#1354A5 0%, #041832 33.33%, #041832 66.67%, #01080E 100%);
+HEAD
     height: 100vh;
+
+    height: auto;
+bfe3a47 (Update)
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
+HEAD
 
+
+bfe3a47 (Update)
 body::before {
     background-image: url("img/code.png");
     background-repeat: no-repeat;
@@ -24,6 +31,7 @@ body::before {
     width: 100%;
     height: 100%;
     opacity: 0.4;
+HEAD
 }
 
 .container {
@@ -33,6 +41,18 @@ body::before {
     align-items: center;
     justify-content: space-between;
     border-radius: 24px;
+
+    overflow: hidden;
+}
+
+.container {
+    width: 75rem;
+    height: 37.50rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 1.50rem;
+ bfe3a47 (Update)
     border: 1px solid #1875E8;
     box-shadow: 4px 4px 20px 0px rgba(1, 8, 14, 0.15);
     background-image: url("img/Ruido.png");
@@ -46,6 +66,11 @@ body::before {
     align-items: center;
     position: absolute;
     bottom: 0;
+ HEAD
+
+    flex-direction: row;
+    width: 100%;
+ bfe3a47 (Update)
 }
 
 .container__informaciones {
@@ -54,18 +79,36 @@ body::before {
 }
 
 .container__boton {
+ HEAD
     border-radius: 16px;
     background: #1875E8;
     padding: 16px 24px;
     width: 100%;
     font-size: 24px;
+
+    border-radius: 1rem;
+    background: #1875E8;
+    padding: 1rem 1.50rem;
+    width: 100%;
+    font-size: 1.50rem;
+ bfe3a47 (Update)
     font-weight: 700;
     border: none;
     margin-top: 2rem;
 }
+ HEAD
 
 .container__boton:disabled {
     background: #898989;
+
+.container__boton:hover{
+    background-color: #1354A5;
+    cursor: pointer;
+}
+.container__boton:disabled {
+    background: #898989;
+    cursor: auto;
+bfe3a47 (Update)
 }
 
 .container__texto {
@@ -79,14 +122,25 @@ body::before {
 .container__input {
     width: 100%;
     height: 72px;
+ HEAD
     border-radius: 16px;
+
+    border-radius: 1rem;
+ bfe3a47 (Update)
     background-color: #FFF;
     border: none;
     color: #1875E8;
     padding: 2rem;
+ HEAD
     font-size: 24px;
     font-weight: 700;
     font-family: 'Inter', sans-serif;
+
+    font-size: 1.50rem;
+    font-weight: 700;
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+bfe3a47 (Update)
 }
 
 .container__botones {
@@ -106,6 +160,197 @@ button {
 }
 
 .texto__parrafo {
+HEAD
     font-size: 32px;
     font-weight: 400;
+
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+@media (max-width: 479px){
+    .container{
+        display: flex;
+        flex-direction: column-reverse;
+        margin: 20px;
+    }
+
+    .container__informaciones {
+        flex: 1;
+        padding: 1rem;
+    }
+
+    .container__contenido{
+        flex-direction: column-reverse;
+        padding: 2rem;
+    }
+
+    .container__imagen-persona{
+        width: 140px;
+    }
+
+    h1 {
+        font-size: 7vw;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+
+    .texto__parrafo{
+        text-align: center;
+        font-size: 4vw;
+    }
+
+    .container__input {
+        height: 10px;
+        padding: 20px;
+        font-size: 1rem;
+    }
+
+    .container__botones {
+        align-items: center;
+        width: 100%;
+        height: 80px;
+        gap: 1rem;
+    }
+
+    button{
+        text-align: center;
+        font-size: 14px !important;
+    }
+}
+
+@media(min-width: 480px) and (max-width: 678px){
+    .container{
+        display: flex;
+        flex-direction: column-reverse;
+        margin: 20px;
+    }
+
+    .container__informaciones {
+        flex: 1;
+        padding: 0.5rem;
+    }
+
+    .container__contenido{
+        flex-direction: column-reverse;
+        padding: 2rem;
+    }
+
+    .container__imagen-persona{
+        width: 150px;
+    }
+
+    h1 {
+        font-size: 8vw;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+
+    .texto__parrafo{
+        text-align: center;
+        font-size: 4vw;
+    }
+
+    .container__input {
+        display: block;
+        margin: auto;
+        padding: 15px;
+        width: 90%;
+        height: 50px;
+    }
+
+    .container__botones {
+        display: flex;
+        margin: auto;
+        width: 80%;
+        height: 80px;
+        gap: 1rem;
+    }
+
+    button{
+        text-align: center;
+        font-size: 13px !important;
+    }
+}
+
+@media(min-width: 679px) and (max-width: 859px){
+
+    .container{
+        display: flex;
+        flex-direction: column-reverse;
+        margin: 50px;
+    }
+
+    .container__informaciones {
+        flex: 1;
+        padding: 0.2rem;
+    }
+
+    .container__contenido{
+        flex-direction: column-reverse;
+        padding: 1rem;
+    }
+
+    .container__imagen-persona{
+        width: 150px;
+    }
+
+    h1{
+        font-size: 7vw; /* Reducción de tamaño para pantallas más pequeñas */
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+
+    .texto__parrafo{
+        text-align: center;
+        font-size: 25px;
+    }
+
+    .container__input {
+        display: block;
+        margin: auto;
+        width: 60%;
+        height: 10px;
+        font-size: 1.2rem; 
+    }
+
+    .container__botones {
+        display: flex;
+        margin: auto;
+        width: 50%;
+        gap: 1rem;
+    }
+
+    button{
+        font-size: 16px !important;
+    }
+}
+
+
+@media(min-width: 860px) and (max-width: 1300px){
+
+    .container__imagen-persona{
+        width: 40%;
+    }
+
+    h1{
+        /* max-width: 100%; */
+        font-size: 6vw;
+        text-align: left;
+    }
+
+    .texto__parrafo{
+        font-size: 3vw;
+    }
+
+    .container__input{
+        width: 420px;
+    }
+
+    .container__botones{
+        width: 420px;
+        height: 115px;
+    }
+
+ bfe3a47 (Update)
 }
